@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MINI-PROJETO-IDENTIFICADORES</title>
+
+    <style>
+
+
+/* Crie uma página com:
+
+- Um título com id="titulo-principal"
+- Dois parágrafos com a class="texto"
+- Um botão com class="botao" e id="botao-unico"
+
+Aplique estilos diferentes usando CSS com tag, classe e id.
+
+Teste quem ganha em caso de conflito. */
+
+    /* Padronização do corpo geral da pagina */
+    body {
+      font-family: 'Inter', sans-serif; /* Aplica a fonte Inter ao corpo do texto.*/
+      background-color: #f9f9f9; /* Um fundo bem claro (quase branco), mais suave que branco puro.*/
+      color: #333; /* Texto em cinza escuro (mais agradável que preto puro).*/
+      margin: 0; /* Remove a margem padrão do navegador.*/
+      padding: 2rem; /* Espaçamento interno nas bordas da página.*/
+      display: flex;
+      justify-content: center; /* Centraliza o conteúdo na horizontal.*/
+    }
+
+
+    /* class que define uma largura máxima de 65 caracteres por linha, ideal para leitura.*/
+    .content {
+      max-width: 65ch;
+    }
+
+    /* classe de text */
+    .text {
+      font-size: 1rem;
+      line-height: 1.6;
+      margin-bottom: 1.5rem;
+      text-align: left;
+    }
+
+    /* classe de texto-destaque-negrito-vermelho*/
+    .texto-destaque-negrito-vermelho {
+        color: red;
+        font-weight: bold;
+    }
+
+    /* classe de texto-destaque-negrito*/
+    .texto-destaque-negrito {
+        font-weight: bold;
+    }    
+
+    /* id é um identificador único */
+    #titulo-principal {
+        font-size: 35px;
+        
+    }
+
+    /* id é um identificador único */
+    #name-site {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        font-weight: 600;
+        
+    }
+
+    /* padronização do paragrafo */
+    p {
+      font-size: 1rem; /* Define o tamanho da fonte (1rem = geralmente 16px).*/
+      line-height: 1.6; /* Altura entre linhas, melhora a legibilidade.*/
+      margin-bottom: 1.5rem; /* Espaço entre os parágrafos.*/
+      text-align: left; /* Alinha o texto à esquerda, o mais natural para leitura em português.*/
+    }
+
+
+.botao {
+  background-color: black;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.botao:hover {
+  background-color: #0056b3;
+}
+
+
+
+</style>
+
+</head>
+
+<body>
+
+    <div class="content">
+
+    <h1 id="titulo-principal">Seja Bem Vindo ao Site:</h1>
+
+    <h2 id="name-site">IDENTIFICADORES</h2>
+
+    <h3>Objetivo:</h3>
+    <p>Entender a diferença entre os identificadores
+        
+       <span class="texto-destaque-negrito-vermelho"> class </span> e <span class="texto-destaque-negrito-vermelho"> id </span> em HTML e CSS, bem como a 
+       
+       <span class="texto-destaque-negrito"> especificidade </span> e as boas práticas no uso desses elementos.</p>
+
+    <p class="texto-destaque-negrito">Para que serve <span class="texto-destaque-negrito-vermelho"> class </span>?</p>
+    <ul>A <span class="texto-destaque-negrito-vermelho"> class </span> é um identificador reutilizável. Ela pode ser atribuída a vários elementos HTML para que recebam os mesmos estilos.
+        Você pode aplicar um estilo a todos os elementos com a mesma class no CSS.</ul>
+    <br>
+
+    <p class="texto-destaque-negrito">Para que serve <span class="texto-destaque-negrito-vermelho"> id </span>?</p>
+    <ul>O <span class="texto-destaque-negrito-vermelho"> id </span> é um identificador <span class="texto-destaque-negrito"> único</span>, ou seja, cada <span class="texto-destaque-negrito-vermelho"> id </span>
+        deve ser usado em apenas <span class="texto-destaque-negrito"> um elemento da página</span>.
+        No CSS, você usa o símbolo <span class="texto-destaque-negrito-vermelho"> # </span> para aplicar estilos a um <span class="texto-destaque-negrito-vermelho"> id </span>.</ul>
+
+<button class="botao" id="botao-unico">Clique aqui</button>
+
+
+    </div>
+</body>
+</html>
